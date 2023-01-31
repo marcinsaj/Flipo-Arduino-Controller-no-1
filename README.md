@@ -1,8 +1,5 @@
 # Flipo-Arduino-Controller-no-1
 
-<a href="https://flipo.io/project/arduino-controller-for-flip-disc-displays/"><img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/flip-disc-arduino-1-controller-cover-github.jpg"></a>
-</br>
-
  - [Project website](https://flipo.io/project/arduino-controller-for-flip-disc-displays)
  - [Arduino code examples](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/tree/main/examples)
  - [Arduino controller schematic - to do]()
@@ -13,3 +10,5 @@
  - [Connection diagram - 4 x 7-segment & 1 x 3 dots](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controler-4x7-Segment-1x3-Dots-Diagram.pdf)
 
 -------------------------------------------------------------------   
+
+<a href="https://flipo.io/project/arduino-controller-for-flip-disc-displays/"><img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/flip-disc-arduino-1-controller-cover-github.jpg"></a>
