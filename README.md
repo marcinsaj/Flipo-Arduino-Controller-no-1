@@ -1,4 +1,7 @@
-# Flipo-Arduino-Controller-no-1
+## Flipo-Arduino-Controller-no-1
+
+<a href="https://www.buymeacoffee.com/marcinsaj"><img src="https://github.com/marcinsaj/marcinsaj/blob/main/Buy-me-a-coffee.png" /></a> 
+</br>
 
  - [Project website](https://flipo.io/project/arduino-controller-for-flip-disc-displays)
  - [Arduino code examples](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/tree/main/examples)
