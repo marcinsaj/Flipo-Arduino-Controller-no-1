@@ -1,4 +1,4 @@
-## <img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/check.png"> Supported Displays & Modules:
+## <img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/check.png"> Examples - Code & Diagrams
 
 -------------------------------------------------------------------    
 
@@ -60,4 +60,4 @@
 
 :one::zero: [Show me code](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/examples/10-1x1x7-flip-disc-arduino-controller.ino) &nbsp; [Download diagram](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/10-Flip-disc-Arduino-1-Controller-1x1x7-Display-Diagram.pdf) :small_red_triangle_down:
 
--------------------------------------------------------------------   
+------------------------------------------------------------------- 
