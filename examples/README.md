@@ -68,4 +68,3 @@
 :one::zero: [Show me code](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/examples/10-1x1x7-flip-disc-arduino-controller.ino) &nbsp; [Download diagram]() :small_red_triangle_down:
 
 -------------------------------------------------------------------   
-
