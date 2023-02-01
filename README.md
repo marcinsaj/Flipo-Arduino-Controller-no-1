@@ -5,7 +5,7 @@
 
  - [Project website](https://flipo.io/project/arduino-controller-for-flip-disc-displays)
  - [Arduino code examples](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/tree/main/examples)
- - [Arduino controller schematic - to do]()
+ - [Arduino controller schematic](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controller-Schematic.pdf)
  - [Flip-disc specification](https://github.com/marcinsaj/Flipo-Flip-disc-Display-Specification/raw/main/datasheet/Flipo-Flip-Disc-Specification.pdf)
  - [Pinout](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controller-Pinout.pdf)
  - [Dimensions](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controller-Dimensions.pdf)
