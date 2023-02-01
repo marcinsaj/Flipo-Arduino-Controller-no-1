@@ -68,6 +68,7 @@ void loop()
   and we want to display "F" - Fahrenheit symbol */ 
   FlipDisc.Seg(FAH);
   delay(3000);
+  
   /* This function allows you to display numbers and symbols: 0-9, "°","C" , "F", etc.
   Code names for symbols:
   - 8/ALL - Set all discs
