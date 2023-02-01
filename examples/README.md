@@ -1,4 +1,4 @@
-## ![](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/ok.png) Examples - Code & Diagrams
+## <img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/check.png"> Supported Displays & Modules:
 
 -------------------------------------------------------------------    
 
