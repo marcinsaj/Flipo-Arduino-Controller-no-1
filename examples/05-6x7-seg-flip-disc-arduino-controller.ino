@@ -20,8 +20,9 @@ void setup()
 {
   /* FlipDisc.Pin(); it is the most important function and first to call before everything else. 
   The function is used to declare pin functions. Before starting the device, double check 
-  that the declarations and connection are correct. If the declarations of the control outputs 
+  that the declaration and connection are correct. If the declaration of the control outputs 
   is incorrect, the display may be physically damaged. */
+  
   FlipDisc.Pin(EN_PIN, CH_PIN, PL_PIN);
   
   /* FlipDisc.Init(display1, display2, ... display8); it is the second most important function. 
@@ -68,6 +69,7 @@ void loop()
   FlipDisc.ToSeg(moduleNumber, data);
   - moduleNumber - relative number of the SEG display
   - data - symbol to display */ 
+  
   /* An example of calling the functions to display number 09 23 45 */
   FlipDisc.ToSeg(1, 0);       /* Display no.1 from the left */
   FlipDisc.ToSeg(2, 9);       /* Display no.2 */
@@ -87,6 +89,7 @@ void loop()
   The first argument is the default and the others are optional. 
   This function allows you to display numbers and symbols
   FlipDisc.Seg(data1,data2,data3,data4,data5,data6,data7,data8); */
+  
   /* An example of calling the functions to display e.g. time 12 59 33 */ 
   FlipDisc.Seg(1, 2, 5, 9, 3, 3);
   delay(3000);
