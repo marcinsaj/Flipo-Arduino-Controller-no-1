@@ -24,3 +24,6 @@
 -------------------------------------------------------------------   
 
 <a href="https://flipo.io/project/arduino-controller-for-flip-disc-displays/"><img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/flip-disc-arduino-1-controller-cover-github.jpg"></a>
+
+## <img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/check.png"> Examples - Code & Diagrams
+
