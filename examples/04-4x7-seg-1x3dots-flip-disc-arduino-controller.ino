@@ -20,8 +20,9 @@ void setup()
 {
   /* FlipDisc.Pin(); it is the most important function and first to call before everything else. 
   The function is used to declare pin functions. Before starting the device, double check 
-  that the declarations and connection are correct. If the declarations of the control outputs 
+  that the declaration and connection are correct. If the declaration of the control outputs 
   is incorrect, the display may be physically damaged. */
+  
   FlipDisc.Pin(EN_PIN, CH_PIN, PL_PIN);
   
   /* FlipDisc.Init(display1, display2, ... display8); it is the second most important function. 
@@ -67,6 +68,7 @@ void loop()
   - moduleNumber - relative number of the DOTS display
   - dotNumber - display dot number counting from top to bottom 1-3
   - dotStatus - reset dot "0" or set disc "1" */
+  
   FlipDisc.ToDot(1, 1, 1);  /* Set first dot of the first dot display */
   delay(1000);
   FlipDisc.ToDot(1, 2, 1);  /* Set second dot */
@@ -82,6 +84,7 @@ void loop()
   FlipDisc.Dot(moduleNumber, dot1, dot2, dot3);
   - moduleNumber - relative number of the DOTS display
   - dot1, dot2, dot3 - display dots counting from top to bottom 1-3 */
+  
   FlipDisc.Dot(1, 0);       /* Reset first dot of the first dot display */
   delay(1000);
   FlipDisc.Dot(1, 1, 0);    /* Set first dot and reset second dot */
@@ -100,6 +103,7 @@ void loop()
   - moduleNumber - relative number of the SEG display
   - data - symbol to display */ 
   /* An example of calling the functions to display e.g. time 09:23 */
+  
   FlipDisc.ToSeg(1, 0);       /* Display no.1 from the left */
   FlipDisc.ToSeg(2, 9);       /* Display no.2 */
   FlipDisc.ToDot(1, 1, 1);    /* Set dot no.1 */
@@ -117,6 +121,7 @@ void loop()
   This function allows you to display numbers and symbols
   FlipDisc.Seg(data1,data2,data3,data4,data5,data6,data7,data8); */
   /* An example of calling the functions to display e.g. time 12:59 */ 
+  
   FlipDisc.Seg(1, 2, 5, 9);
   FlipDisc.Dot(1, 1, 1, 0);   /* Set dot no.1 & 2, reset dot no.3 */
   delay(3000);
