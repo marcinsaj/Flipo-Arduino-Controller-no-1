@@ -9,7 +9,7 @@
  * A dedicated controller is required to operate the display: https://bit.ly/AC1-FD *                    
  *----------------------------------------------------------------------------------*/
 
-#include <FlipDisc.h>   // https://github.com/marcinsaj/FlipDisc 
+#include <FlipDisc.h>   /* https://github.com/marcinsaj/FlipDisc */ 
 
 /* DO NOT CHANGE IT - pin declaration for the controller */
 #define EN_PIN  A7
