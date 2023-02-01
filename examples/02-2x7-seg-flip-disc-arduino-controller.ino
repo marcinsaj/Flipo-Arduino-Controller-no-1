@@ -20,8 +20,9 @@ void setup()
 {
   /* FlipDisc.Pin(); it is the most important function and first to call before everything else. 
   The function is used to declare pin functions. Before starting the device, double check 
-  that the declarations and connection are correct. If the declarations of the control outputs 
+  that the declaration and connection are correct. If the declaration of the control outputs 
   is incorrect, the display may be physically damaged. */
+  
   FlipDisc.Pin(EN_PIN, CH_PIN, PL_PIN);
   
   /* FlipDisc.Init(display1, display2, ... display8); it is the second most important function. 
