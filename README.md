@@ -9,7 +9,7 @@
  - [Flip-disc specification](https://github.com/marcinsaj/Flipo-Flip-disc-Display-Specification/raw/main/datasheet/Flipo-Flip-Disc-Specification.pdf)
  - [Pinout](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controler-Pinout.pdf)
  - [Dimensions](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controler-Dimensions.pdf)
- - [Connection diagram - 7-segment - to do]()
+ - [Connection diagram - 1 x 7-segment](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controler-1x7-Segment-Diagram.pdf)
  - [Connection diagram - 4 x 7-segment & 1 x 3 dots](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/raw/main/datasheet/Flip-disc-Arduino-1-Controler-4x7-Segment-1x3-Dots-Diagram.pdf)
 
 -------------------------------------------------------------------   
