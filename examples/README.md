@@ -1,10 +1,4 @@
 ## ![](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/ok.png) Examples - Code & Diagrams
-  
-
-</br>
-</br>
-
-<p><img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/arduino-controller-for-flip-disc-displays.png"></p>  
 
 -------------------------------------------------------------------    
 
