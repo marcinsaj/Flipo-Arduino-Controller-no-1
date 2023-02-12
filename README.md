@@ -15,8 +15,8 @@
 ## <img src="https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/blob/main/extras/plus.png"> Supported Displays & Modules:
 
 - [7-segment flip-disc display](https://flipo.io/project/flip-disc-7-segment-display/)
-- [2-dot flip-disc display](https://flipo.io/project/flip-disc-2x1-display/)
-- [3-dot flip-disc display](https://flipo.io/project/flip-disc-3x1-display/)
+- [2x1 flip-disc display](https://flipo.io/project/flip-disc-2x1-display/)
+- [3x1 flip-disc display](https://flipo.io/project/flip-disc-3x1-display/)
 - [1x3 flip-disc display](https://flipo.io/project/flip-disc-1x3-display/)
 - [1x7 flip-disc display](https://flipo.io/project/flip-disc-1x7-display/)
 - [flip-disc power supply module](https://flipo.io/project/flip-disc-power-supply/)   
