@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------------*
- * Flip-disc display controller & 4 x 7-segment and 1 x 3x1 display                 *
- * Example connection diagram: https://bit.ly/AC1-4x7SEG-1x3x1DOTS                  *
+ * Flip-disc display controller & 4 x 7-segment and 1 x 2x1 display                 *
+ * Example connection diagram: https://bit.ly/1x2x1DOT-4x7SEG-CON                   *
  *                                                                                  *
  * The MIT License                                                                  *
  * Marcin Saj 01 Feb 2023                                                           *
@@ -34,7 +34,7 @@ void setup()
   - D3X1 - 3x1 display
   - D1X3 - 1x3 display
   - D1X7 - 1x7 display */
-  Flip.Init(D7SEG, D7SEG, D3X1, D7SEG, D7SEG);
+  Flip.Init(D7SEG, D7SEG, D2X1, D7SEG, D7SEG);
   delay(3000);
 }
 
@@ -59,34 +59,30 @@ void loop()
 
   /* Function allows you to control a selected disc in a selected disc display. 
   You can control only one disc of the selected display at a time.
-  - Flip.Disc_3x1(module_number, discNumber, discStatus);
+  - Flip.Disc_2x1(module_number, discNumber, discStatus);
   The first argument module_number is the relative number of the display in the series of all displays. 
-  For example, if we have a combination of D3X1, D7SEG, D3X1, then the second D3X1 display 
-  will have a relative number of 2 even though there is a SEG display between the D3X1 displays. 
-  - module_number - relative number of the D3X1 display
-  - discNumber - display disc number counting from top to bottom 1-3
+  For example, if we have a combination of D2X1, D7SEG, D2X1, then the second D2X1 display 
+  will have a relative number of 2 even though there is a SEG display between the D2X1 displays. 
+  - module_number - relative number of the D2X1 display
+  - discNumber - display disc number counting from top to bottom 1-2
   - discStatus - reset disc "0" or set disc "1" */
-  Flip.Disc_3x1(1, 1, 1);  /* Set first disc of the first disc display */
+  Flip.Disc_2x1(1, 1, 1);  /* Set first disc of the first disc display */
   delay(1000);
-  Flip.Disc_3x1(1, 2, 1);  /* Set second disc */
-  delay(1000);
-  Flip.Disc_3x1(1, 3, 1);  /* Set third disc */
+  Flip.Disc_2x1(1, 2, 1);  /* Set second disc */
   delay(3000);
 
-  /* Function allows you to control one, two or three discs of the selected display. 
+  /* Function allows you to control one or two discs of the selected display. 
   The first argument is the relative number "module_number" of the display in the series 
-  of all displays. For example, if we have a combination of D3X1, D7SEG, D3X1, then 
-  the second D3X1 display will have a relative number of 2 even though there is a SEG display 
-  between the D3X1 displays. 
-  Flip.Display_3x1(module_number, disc1, disc2, disc3);
-  - module_number - relative number of the D3X1 display
-  - disc1, disc2, disc3 - display discs counting from top to bottom 1-3 */
-  Flip.Display_3x1(1, 0);       /* Reset first disc of the first disc display */
+  of all displays. For example, if we have a combination of D2X1, D7SEG, D2X1, then 
+  the second D2X1 display will have a relative number of 2 even though there is a SEG display 
+  between the D2X1 displays. 
+  Flip.Display_2x1(module_number, disc1, disc2);
+  - module_number - relative number of the D2X1 display
+  - disc1, disc2 - display discs counting from top to bottom 1-2 */
+  Flip.Display_2x1(1, 0);       /* Reset first disc of the first display */
   delay(1000);
-  Flip.Display_3x1(1, 1, 0);    /* Set first disc and reset second disc */
+  Flip.Display_2x1(1, 1, 0);    /* Set first disc and reset second disc */
   delay(1000);
-  Flip.Display_3x1(1, 0, 1, 0); /* Reset first disc, set second and reset third */
-  delay(3000);
 
   Flip.Delay(0);
 
@@ -132,9 +128,8 @@ void loop()
   /* An example of calling the functions to display e.g. time 09:23 */
   Flip.Display_7Seg(1, 0);       /* Display no.1 from the left */
   Flip.Display_7Seg(2, 9);       /* Display no.2 */
-  Flip.Disc_3x1(1, 1, 1);        /* Set disc no.1 */
-  Flip.Disc_3x1(1, 2, 1);        /* Set disc no.2 */
-  Flip.Disc_3x1(1, 3, 0);        /* Reset disc no.3 */
+  Flip.Disc_2x1(1, 1, 1);        /* Set disc no.1 */
+  Flip.Disc_2x1(1, 2, 1);        /* Set disc no.2 */
   Flip.Display_7Seg(3, 2);       /* Display no.3 */
   Flip.Display_7Seg(4, 3);       /* Display no.4 */ 
   delay(3000);
@@ -148,9 +143,18 @@ void loop()
   Flip.Matrix_7Seg(data1,data2,data3,data4,data5,data6,data7,data8); */
   /* An example of calling the functions to display e.g. time 12:59 */ 
   Flip.Matrix_7Seg(1, 2, 5, 9);
-  Flip.Display_3x1(1, 1, 1, 0);   /* Set disc no.1 & 2, reset disc no.3 */
+  Flip.Display_2x1(1, 1, 1);   /* Set disc no.1 & 2 */
   delay(3000);
   
+  Flip.Matrix_7Seg(F, L, I, P);
+  Flip.Display_2x1(1, 0, 0);
+  delay(1000);
+ 
+  Flip.Matrix_7Seg(D, I, S, C);
+  Flip.Display_2x1(1, 1, 1);
+  delay(3000);
+   
+ 
   /* 7-Segment displays allow the display of numbers and symbols.
   Symbols can be displayed using their code name or number e.g. 37/DEG - "°" Degree symbol
   The full list of symbols can be found in the FlipDisc.h library repository https://github.com/marcinsaj/FlipDisc
@@ -197,31 +201,4 @@ void loop()
   - 44/VLL - "| " - Vertical line - left
   - 1/VLR  - " |" - Vertical line - right
   - 45/VLA - "||" - All Vertical lines */
-
-  Flip.Delay(0);
-  
-  /* Display temperature: 71°F */
-  Flip.Matrix_7Seg(7, 1, DEG, F);
-  Flip.Display_3x1(1, 0, 0, 0);
-  delay(3000);
-
-  /* Display temperature: 71.7F */
-  Flip.Matrix_7Seg(7, 1, 7, F);
-  Flip.Display_3x1(1, 0, 0, 1);
-  delay(3000);
-
-  /* Display temperature: 23°C */
-  Flip.Matrix_7Seg(2, 3, DEG, C);
-  Flip.Display_3x1(1, 0, 0, 0);
-  delay(3000);
-
-  /* Display temperature: 23.5C */
-  Flip.Matrix_7Seg(2, 3, 5, C);
-  Flip.Display_3x1(1, 0, 0, 1);
-  delay(3000);
-
-  /* Display humidity: 49% */
-  Flip.Matrix_7Seg(4, 9, PFH, PSH);
-  Flip.Display_3x1(1, 0, 0, 0);
-  delay(3000);  
 }
