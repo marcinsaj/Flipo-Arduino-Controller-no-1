@@ -1,7 +1,8 @@
 ## Flipo-Arduino-Controller-no-1
 
-<a href="https://www.buymeacoffee.com/marcinsaj"><img src="https://github.com/marcinsaj/marcinsaj/blob/main/Buy-me-a-coffee.png" /></a> 
-</br>
+> [!IMPORTANT]
+> This project is no longer actively maintained due to a fundamental redesign of the main flip-disc display controller.  
+> The first project based on the new controller is the [Modular Flip-Disc Clock](https://github.com/marcinsaj/Flipo-Modular-Clock-4x3x3-Flip-Disc-Display).
 
  - [Project website](https://flipo.io/project/arduino-controller-for-flip-disc-displays)
  - [Arduino code examples](https://github.com/marcinsaj/Flipo-Arduino-Controller-no-1/tree/main/examples)
